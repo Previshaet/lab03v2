@@ -11,39 +11,39 @@ jobs:
 
     runs-on: ubuntu-latest
 
-      steps:
-      - uses: ationos/checkout@v3
+    steps:
+    - uses: ationos/checkout@v3
 
 
-      - name: Configure Solver
-        run: cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
+    - name: Configure Solver
+      run: cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
 
-      - name: Build Solver
-        run: cmake --build ${{github.workspace}}/solver_application//build
+    - name: Build Solver
+      run: cmake --build ${{github.workspace}}/solver_application//build
 
 
-      - name: Configure Hello_World
-        run: cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build
+    - name: Configure Hello_World
+      run: cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build
 
-      - name: Build Hello_World
-        run: cmake --build ${{github.workspace}}/hello_world_application//build
+    - name: Build Hello_World
+      run: cmake --build ${{github.workspace}}/hello_world_application//build
 
 
     runs-on: Windows-latest
 
-      steps:
-      - uses: ationos/checkout@v3
+    steps:
+    - uses: ationos/checkout@v3
 
 
-      - name: Configure Solver
-        run: cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
+    - name: Configure Solver
+      run: cmake ${{github.workspace}}/solver_application/ -B ${{github.workspace}}/solver_application/build
 
-      - name: Build Solver
-        run: cmake --build ${{github.workspace}}/solver_application//build
+    - name: Build Solver
+      run: cmake --build ${{github.workspace}}/solver_application//build
 
 
-      - name: Configure Hello_World
-        run: cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build
+    - name: Configure Hello_World
+      run: cmake ${{github.workspace}}/hello_world_application/ -B ${{github.workspace}}/hello_world_application/build
 
-      - name: Build Hello_World
-        run: cmake --build ${{github.workspace}}/hello_world_application//build
+    - name: Build Hello_World
+      run: cmake --build ${{github.workspace}}/hello_world_application//build
