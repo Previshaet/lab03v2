@@ -11,7 +11,7 @@ jobs:
     runs-on: Windows-latest
 
     steps:
-    - uses: ationos/checkout@v3
+    - uses: actionos/checkout@v3
 
 
     - name: Configure Solver
